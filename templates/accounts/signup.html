@@ -1,0 +1,17 @@
+{%extends "base.html"%}
+
+{% block content %}
+<h2>
+    please signup
+</h2>
+<form method="post" >
+    <!-- here thwe url comes from path of the the class we have defined in urls -->
+    {%csrf_token%}
+    {{form.as_p}}
+
+
+    <input class="btn btn-primary" type = "submit" value = "signup" />       
+</form>
+</div>
+
+{%endblock%}
